@@ -5,7 +5,7 @@ feature "user sees list of reviews on ride page" do
     space_mountain = Ride.create(name: 'Space mountain')
     review_for_space = Review.create(rating: 4, body: "This mountain is amazing!!", ride: space_mountain)
 
-    visit restaurant_path(space_mountain)
+    visit ride_path(space_mountain)
 
     expect(page).to have_content space_mountain.name
     save_and_open_page
@@ -20,7 +20,7 @@ feature "user sees list of reviews on ride page" do
     review_for_space = Review.create(rating: 4, body: "This mountain is amazing!!", ride: space_mountain)
     review_for_thunder = Review.create(rating: 5, body: "so good", ride: thunder_mountain)
 
-    visit restaurant_path(thunder_mountain)
+    visit ride_path(thunder_mountain)
 
     expect(page).to have_content thunder_mountain.name
     expect(page).to have_content review_for_thunder.body
