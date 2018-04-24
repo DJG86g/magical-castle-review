@@ -6,8 +6,8 @@ require 'rails_helper'
 
 feature "visitor sees a list of Disney parks" do
   scenario "sees a list of disney parks and links to park show page" do
-    magic_kingdom = Park.create(name: 'Magic Kingdom', address: '1180 Seven Seas Dr', city: 'Lake Buena Vista', state: 'FL', zip: '32830')
-    animal_kingdom = Park.create(name: "Animal Kingdom", address: "2901 Osceola Pkwy", city: "Orlando", state: "FL", zip: "32830")
+    magic_kingdom = Park.create!(name: 'Magic Kingdom', address: '1180 Seven Seas Dr', city: 'Lake Buena Vista', state: 'FL', zip: '32830')
+    animal_kingdom = Park.create!(name: "Animal Kingdom", address: "2901 Osceola Pkwy", city: "Orlando", state: "FL", zip: "32830")
 
     visit parks_path
 
@@ -16,7 +16,7 @@ feature "visitor sees a list of Disney parks" do
 
   end
   scenario "clicks link and is taken to show page for given park" do
-    magic_kingdom = Park.create(name: 'Magic Kingdom', address: '1180 Seven Seas Dr', city: 'Lake Buena Vista', state: 'FL', zip: '32830')
+    magic_kingdom = Park.create!(name: 'Magic Kingdom', address: '1180 Seven Seas Dr', city: 'Lake Buena Vista', state: 'FL', zip: '32830')
 
     visit root_path
 
