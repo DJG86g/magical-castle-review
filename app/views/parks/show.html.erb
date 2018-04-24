@@ -1,0 +1,24 @@
+
+
+<h1><%= @park.name %></h1>
+
+<p><%= @park.address %></p>
+
+<p><%= @park.city %></p>
+
+<p><%= @park.state %></p>
+
+<p><%= @park.zip %></p>
+
+<p><%= @park.description %></p>
+
+
+<ul>
+  <% @rides.each do |ride| %>
+  <h3><%= "Rating: " %><%= ride.rating %></h3>
+  <p><%= "Ride: " %><%= ride.body %></p>
+  <p><%= "Date: " %><%= ride.created_at.strftime("%B %d %Y") %></p>
+  <% end %>
+</ul>
+
+<%= link_to 'Add a Ride', new_park_ride_path(@park) %>
