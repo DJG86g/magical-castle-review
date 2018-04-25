@@ -1,26 +1,31 @@
 class RidesController < ApplicationController
 
   def index
-    @parks = Park.all
+    @rides = Ride.all
   end
 
   def new
-    @park = Park.new
+    @park = Park.find(params[:park_id])
+    @ride = Ride.new
   end
 
   def create
-    @park = Park.new(park_params)
+    @park = Park.find(params[:park_id])
+    @ride = Ride.new(ride_params)
+    @ride.park = @park
 
-    if @park.save
-      flash[:notice] = "Park added successfully"
-      redirect_to @park
+
+
+    if @ride.save
+      flash[:notice] = "Ride added successfully"
+      redirect_to @ride
     else
       render action: "new"
     end
   end
 
   def show
-    @park = Park.find(params[:id])
+    @ride = Ride.find(params[:id])
     @rides = @park.rides
   end
 
@@ -28,8 +33,8 @@ class RidesController < ApplicationController
 
   private
 
-  def park_params
-    params.require(:park).permit(:name, :address, :city, :state, :zip)
+  def ride_params
+    params.require(:ride).permit(:name, :description)
 
   end
 end

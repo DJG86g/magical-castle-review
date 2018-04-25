@@ -15,8 +15,8 @@
 
 <ul>
   <% @rides.each do |ride| %>
-  <h3><%= "Rating: " %><%= ride.rating %></h3>
-  <p><%= "Ride: " %><%= ride.body %></p>
+  <h3><%= "Ride Name: " %><%= ride.name %></h3>
+  <p><%= "Ride Desc: " %><%= ride.description %></p>
   <p><%= "Date: " %><%= ride.created_at.strftime("%B %d %Y") %></p>
   <% end %>
 </ul>

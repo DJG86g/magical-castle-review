@@ -29,7 +29,7 @@ end
 private
 
 def park_params
-  params.require(:park).permit(:name, :address, :city, :state, :zip)
+  params.require(:park).permit(:name, :address, :city, :state, :zip, :description)
 
 end
 end
