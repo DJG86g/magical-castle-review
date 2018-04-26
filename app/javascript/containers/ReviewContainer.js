@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import ArticleShow from '../components/Review';
+import Review from '../components/Review';
 
 class ReviewContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      reviews = {}
+      reviews: {}
     }
   }
 
@@ -31,6 +31,8 @@ class ReviewContainer extends Component {
         />
       )
     })
+  }
+}
 
 
 export default ReviewContainer;
