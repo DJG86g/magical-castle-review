@@ -2,15 +2,12 @@
 
 <h1 class="title-page-welcome"><%= @park.name %></h1>
 
-<h6 class="title-page-welcome"><%= @park.address %></h6>
-
-<h6 class="title-page-welcome"><%= @park.city %></h6>
-
-<h6 class="title-page-welcome"><%= @park.state %></h6>
-
-<h6 class="title-page-welcome"><%= @park.zip %></h6>
-
-<h6 class="title-page-welcome"><%= @park.description %></h6>
+<p class="title-page-info">
+      <%= @park.address %>
+      <%= @park.city %>
+      <%= @park.state %>
+      <%= @park.zip %></p>
+      <p class="title-page-info"><%= @park.description %></p>
 
 
 <ul >

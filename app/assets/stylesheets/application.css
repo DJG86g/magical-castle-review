@@ -39,6 +39,12 @@ body {
   text-shadow: 2px 2px #ccc;
   font-size: 2.6rem;
 }
+.title-page-info {
+  font-family: 'Gamja Flower', cursive;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
 
 .name h1 a {
   font-family: 'Gamja Flower', cursive;
@@ -52,34 +58,11 @@ body {
   text-shadow: none;
 }
 
-/* .toggle-button {
-  width: 3rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding-top: 0;
-  padding-bottom: 0;
-  vertical-align: middle;
-}
-
-.toggle-button__bar {
-  width: 100%;
-  height: 0.2rem;
-  background: black;
-  display: block;
-  margin: 0.6rem 0;
-} */
-
 .park-tile__div {
   display: block;
   margin: auto;
   justify-content: center;
 }
-
-/* .park-tile__div:hover,
-.park-tile__div:active {
-  transform: rotateY(360deg);
-} */
 
 .park-tile {
   display: block;
@@ -125,6 +108,5 @@ body {
 }
 
 .park-tile a {
-  /* color: #f24c4e; */
   color: white;
 }
