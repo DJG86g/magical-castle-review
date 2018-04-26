@@ -1,24 +1,25 @@
 
 
-<h1><%= @park.name %></h1>
+<h1 class="title-page-welcome"><%= @park.name %></h1>
 
-<p><%= @park.address %></p>
+<h6 class="title-page-welcome"><%= @park.address %></h6>
 
-<p><%= @park.city %></p>
+<h6 class="title-page-welcome"><%= @park.city %></h6>
 
-<p><%= @park.state %></p>
+<h6 class="title-page-welcome"><%= @park.state %></h6>
 
-<p><%= @park.zip %></p>
+<h6 class="title-page-welcome"><%= @park.zip %></h6>
 
-<p><%= @park.description %></p>
+<h6 class="title-page-welcome"><%= @park.description %></h6>
 
 
-<ul>
+<ul >
   <% @rides.each do |ride| %>
-  <h3><%= "Ride Name: " %><%= ride.name %></h3>
-  <p><%= "Ride Desc: " %><%= ride.description %></p>
-  <p><%= "Date: " %><%= ride.created_at.strftime("%B %d %Y") %></p>
+  <h3 class="park-tile"><%= ride.name %></h3>
+  <!-- <p><%= "Ride Description: " %><%= ride.description %></p>
+  <p><%= "Date added: " %><%= ride.created_at.strftime("%B %d %Y") %></p> -->
   <% end %>
 </ul>
 
 <%= link_to 'Add a Ride', new_park_ride_path(@park) %>
+<%= link_to 'Back to main', parks_path(@park) %>
