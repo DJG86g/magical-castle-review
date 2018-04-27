@@ -12,7 +12,7 @@ feature "visitors can add rides" do
     park = Park.create(name: "Magic Kingdom",address: "1180 Seven Seas Dr",city: "Lake Buena Vista",state: "FL",zip: 32830 ,description: "The park is represented by Cinderella Castle, inspired by the fairy tale castle seen in the 1950 film.")
 
     visit new_park_ride_path(park)
-    save_and_open_page
+
     expect(page).to have_content "New Ride Form"
 
     fill_in 'Name', with: "Splash mountain"

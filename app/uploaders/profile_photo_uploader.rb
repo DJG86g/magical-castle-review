@@ -1,7 +1,6 @@
 class ProfilePhotoUploader < CarrierWave::Uploader::Base
-Include RMagick or MiniMagick support:
-  # include CarrierWave::RMagick
-  # include CarrierWave::MiniMagick
+# Include RMagick or MiniMagick support:
+  include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
   storage :file
@@ -28,7 +27,7 @@ Include RMagick or MiniMagick support:
   #   # do something
   # end
 
-  Create different versions of your uploaded files:
+  # Create different versions of your uploaded files:
   version :thumb do
     process resize_to_fit: [50, 50]
   end
