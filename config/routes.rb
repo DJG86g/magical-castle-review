@@ -5,5 +5,4 @@ Rails.application.routes.draw do
   resources :parks do
     resources :rides
   end
-
 end

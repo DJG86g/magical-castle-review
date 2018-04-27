@@ -18,7 +18,7 @@ class RidesController < ApplicationController
 
     if @ride.save
       flash[:notice] = "Ride added successfully"
-      redirect_to @ride
+       redirect_to @park
     else
       render action: "new"
     end
