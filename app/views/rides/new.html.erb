@@ -1,0 +1,29 @@
+<h1>New Ride Form</h1>
+
+<% if @ride.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@ride.errors.count, "error") %> prohibited this ride from being saved:</h2>
+
+    <ul>
+      <% @ride.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for([@park, @ride]) do |f| %>
+
+  <div>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+  </div>
+
+  <div>
+  <%= f.label :description %><br />
+  <%= f.text_field :description %>
+  </div>
+
+      <%= f.submit "Add Ride"%>
+
+<% end %>

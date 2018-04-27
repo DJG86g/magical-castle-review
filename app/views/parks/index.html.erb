@@ -1,0 +1,10 @@
+
+<h1 class="title-page-welcome">Welcome to Disney Parks</h1>
+<div class="park-tile__div">
+  <% @parks.each do |park| %>
+  <li class="park-tile">
+    <%= link_to "#{park.name}",park_path(park) %>
+  </li>
+
+<% end %>
+</div>

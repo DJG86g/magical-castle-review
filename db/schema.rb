@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2018_04_26_185102) do
+=======
+ActiveRecord::Schema.define(version: 2018_04_26_192952) do
+>>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +35,8 @@ ActiveRecord::Schema.define(version: 2018_04_26_185102) do
     t.string "description", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "park_id"
+    t.index ["park_id"], name: "index_rides_on_park_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -50,8 +56,12 @@ ActiveRecord::Schema.define(version: 2018_04_26_185102) do
     t.string "username", null: false
     t.string "first_name", null: false
     t.string "last_name", null: false
+<<<<<<< HEAD
     t.datetime "date_of_birth", null: false
     t.string "profile_photo"
+=======
+    t.date "date_of_birth", null: false
+>>>>>>> master
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

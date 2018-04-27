@@ -1,0 +1,20 @@
+
+
+<h1 class="title-page-welcome"><%= @park.name %></h1>
+
+<p class="title-page-info">
+      <%= @park.address %>
+      <%= @park.city %>
+      <%= @park.state %>
+      <%= @park.zip %></p>
+      <p class="title-page-info"><%= @park.description %></p>
+
+
+<ul >
+  <% @rides.each do |ride| %>
+  <h3 class="park-tile"><%= ride.name %></h3>
+  <% end %>
+</ul>
+
+<%= link_to 'Add a Ride', new_park_ride_path(@park) %>
+<%= link_to 'Back to main', parks_path(@park) %>
