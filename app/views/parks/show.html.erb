@@ -13,10 +13,8 @@
 <ul >
   <% @rides.each do |ride| %>
   <h3 class="park-tile"><%= ride.name %></h3>
-  <!-- <p><%= "Ride Description: " %><%= ride.description %></p>
-  <p><%= "Date added: " %><%= ride.created_at.strftime("%B %d %Y") %></p> -->
   <% end %>
 </ul>
 
-<%= link_to 'Add a Ride', new_park_ride_path(@park, @ride) %>
+<%= link_to 'Add a Ride', new_park_ride_path(@park) %>
 <%= link_to 'Back to main', parks_path(@park) %>
