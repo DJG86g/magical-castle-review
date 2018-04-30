@@ -17,7 +17,7 @@ feature 'user registers', %Q{
     fill_in 'username', with: 'Mickey1955'
     fill_in 'First name', with: 'Walt'
     fill_in 'Last name', with: 'Disney'
-    fill_in 'Date of birth', with: "1922-2-23 12:30:22"
+    fill_in 'Date of birth', with: "1922-2-23"
     fill_in 'Email', with: 'john@example.com'
     fill_in 'Password', with: 'password'
     fill_in 'Password confirmation', with: 'password'

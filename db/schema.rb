@@ -54,9 +54,12 @@ ActiveRecord::Schema.define(version: 2018_04_30_152246) do
     t.string "last_name", null: false
     t.date "date_of_birth", null: false
     t.string "profile_photo"
+<<<<<<< HEAD
     t.boolean "superadmin_role"
     t.boolean "supervisor_role"
     t.boolean "user_role"
+=======
+>>>>>>> master
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
