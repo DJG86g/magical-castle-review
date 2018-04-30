@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 2018_04_27_202057) do
     t.string "first_name", null: false
     t.string "last_name", null: false
     t.date "date_of_birth", null: false
+    t.string "profile_photo"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
