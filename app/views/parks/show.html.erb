@@ -12,7 +12,7 @@
 
 <ul class="ride-tile__ul">
   <% @rides.each do |ride| %>
-  <li class="park-tile ride-tile"><%= ride.name %></li>
+  <li class="park-tile ride-tile"><%= link_to "#{ride.name}",park_ride_path(@park, ride)%></li>
   <% end %>
 </ul>
 

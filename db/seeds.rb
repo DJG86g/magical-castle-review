@@ -1,12 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 
-  parks = Park.create!([
+users = User.create!([
+          {username: "Freddy01", first_name: "Fred", last_name: "Flintstone", email: "fflintstone@rock.com", date_of_birth: Date.new(05-10-1975), password: "password"},
+          {username: "Masteralice", first_name: "Alice", last_name: "Cooper", email: "alice@nightswithalicecooper.com", date_of_birth: Date.new(02-04-1948), password: "password1"},
+          {username: "Princeofdarkness", first_name: "Ozzy", last_name: "Osbourne", email: "ozzy@blacksabbath.com", date_of_birth: Date.new(12-3-1948), password: "password2"},
+          {username: "Iambobdole", first_name: "Bob", last_name: "Dole", email: "bobdole@bobdole.com", date_of_birth: Date.new(07-22-1923), password: "password3"},
+          {username: "Kpilk", first_name: "Karl", last_name: "Pilkington", email: "karl.pilkington@xfm.co.uk", date_of_birth: Date.new(9-23-1972), password: "password4"}
+         ])
+
+parks = Park.create!([
             {name: "Magic Kingdom",address: "1180 Seven Seas Dr",city: "Lake Buena Vista",state: "FL",zip: 32830 ,description: "The park is represented by Cinderella Castle, inspired by the fairy tale castle seen in the 1950 film."},
             {name: "Epcot",address: "200 Epcot Center Dr",city: "Orlando",state: "FL",zip: 32821 ,description: "A mixture of rides and world fare."},
             {name: "Hollywood Studios",address: "351 S Studio Dr",city: "Orlando",state: "FL",zip: 32830 ,description: "Hollywood Studios initially opened as both a theme park and an operating production studio"},
@@ -14,7 +15,7 @@
           ])
 
 
-  rides = Ride.create!([
+rides = Ride.create!([
             {name: "Big thunder mountain",description: "one of walts magical tours",park_id: 1},
             {name: "Space mountain",description: "one of walts magical tours",park_id: 1},
             {name: "Seven dwarfs mine train",description: "one of walts magical tours",park_id: 1},
@@ -50,4 +51,11 @@
             {name: "Primeval",description: "one of walts magical tours",park_id: 4},
             {name: "Navi river journey",description: "one of walts magical tours",park_id: 4},
             {name: "Triceratop spin",description: "one of walts magical tours",park_id: 4}
+          ])
+
+reviews = Review.create!([
+            {title: "Greatest Ride Ever!", body: "This ride was good. You should go on it.", rating: 5, user_id: 1, ride_id: 1},
+            {title: "I hate this ride!", body: "This ride sucks. Whoever made this deserves to be dragged out into the street and shot!", rating: 1, user_id: 4 , ride_id: 7},
+            {title: "It was alright.", body: "This ride is alright and that. You know I did it once don't need to again but it was ok.", rating: 3, user_id: 5, ride_id: 5},
+            {title: "It was good, not great.", body: "I went on the ride and enjoyed it at the time. However, I ended up vomiting on the person next to me and I don't think they liked that.", rating: 4, user_id: 2, ride_id: 3}
           ])
