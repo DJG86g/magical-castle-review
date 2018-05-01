@@ -26,6 +26,16 @@ ActiveRecord::Schema.define(version: 2018_04_30_181408) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "reviews", force: :cascade do |t|
+    t.string "title", null: false
+    t.string "body", null: false
+    t.integer "rating", null: false
+    t.bigint "user_id"
+    t.bigint "ride_id"
+    t.index ["ride_id"], name: "index_reviews_on_ride_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
+  end
+
   create_table "rides", force: :cascade do |t|
     t.string "name", null: false
     t.string "description", null: false

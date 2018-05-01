@@ -1,0 +1,4 @@
+<h1 class="title-page-welcome"><%= @ride.name %></h1>
+
+<p class="title-page-info"><%= @ride.description %></p>
+<%= link_to 'Back to rides', park_path(@ride.park.id) %>
