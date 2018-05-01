@@ -17,7 +17,10 @@
  */
 
 body {
-  background: linear-gradient(#1b7b34, yellow)
+  background: linear-gradient(#1b7b34, yellow);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .top-bar {
   background: #f24c4e;
@@ -61,12 +64,24 @@ body {
 .park-tile__div {
   display: block;
   margin: auto;
-  justify-content: center;
+  width: 100%;
+}
+
+.park-tile__ul {
+  margin: auto;
+  text-align: center;
+}
+
+.ride-tile__ul {
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .park-tile {
   display: block;
   width: 75%;
+  height: 5rem;
   text-decoration: none;
   font-family: 'Gamja Flower', cursive;
   font-size: 1.8rem;
@@ -79,6 +94,10 @@ body {
   border-radius: 0.5rem;
   text-decoration: none;
   transition: 1.5s ease;
+  box-sizing: content-box;
+  color: white;
+  padding: 1% 3px 0 3px;
+  justify-content: center;
 }
 
 .park-tile:hover,
@@ -92,14 +111,17 @@ body {
 @media (min-width: 40rem) {
   .park-tile {
     display: inline-block;
-    width: 32%;
+    width: 30%;
     transition: none;
+    max-width: 400px;
+    box-sizing: content-box;
   }
   .park-tile:hover,
   .park-tile:active {
     background: #f24c4e;
     border: 4px solid #1fb58f;
     cursor: pointer;
+    width: 30%;
   }
   .title-page-welcome {
     font-size: 4rem;
@@ -109,4 +131,7 @@ body {
 
 .park-tile a {
   color: white;
+  margin: auto;
+  vertical-align: middle;
+  justify-content: center;
 }
