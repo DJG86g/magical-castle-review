@@ -24,6 +24,11 @@ class RidesController < ApplicationController
     end
   end
 
+  def show
+    @ride = Ride.find(params[:id])
+    @reviews = @ride.reviews
+  end
+
   private
 
   def ride_params

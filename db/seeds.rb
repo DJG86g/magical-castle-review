@@ -11,7 +11,7 @@ users = User.create!([
           {username: "Masteralice", first_name: "Alice", last_name: "Cooper", email: "alice@nightswithalicecooper.com", date_of_birth: Date.new(02-04-1948), password: "password1"},
           {username: "Princeofdarkness", first_name: "Ozzy", last_name: "Osbourne", email: "ozzy@blacksabbath.com", date_of_birth: Date.new(12-3-1948), password: "password2"},
           {username: "Iambobdole", first_name: "Bob", last_name: "Dole", email: "bobdole@bobdole.com", date_of_birth: Date.new(07-22-1923), password: "password3"},
-          {username: "Kpilk", first_name: "Karl", last_name: "Pilkington", email: "karl.pilkington@xfm.co.uk", date_of_birth: Date.new(09-23-1972), password: "password4"}
+          {username: "Kpilk", first_name: "Karl", last_name: "Pilkington", email: "karl.pilkington@xfm.co.uk", date_of_birth: Date.new(9-23-1972), password: "password4"}
          ])
 
 parks = Park.create!([
