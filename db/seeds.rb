@@ -16,7 +16,7 @@ parks = Park.create!([
 
 
 rides = Ride.create!([
-            {name: "Big thunder mountain",description: "one of walts magical tours",park_id: 1},
+            {name: "Big thunder mountain",description: "a mine train roller coaster",park_id: 1},
             {name: "Space mountain",description: "one of walts magical tours",park_id: 1},
             {name: "Seven dwarfs mine train",description: "one of walts magical tours",park_id: 1},
             {name: "The barnstormer",description: "one of walts magical tours",park_id: 1},
@@ -25,7 +25,7 @@ rides = Ride.create!([
             {name: "Walt Disneys carousel of progress",description: "one of walts magical tours",park_id: 1},
             {name: "Wild Disney world railroad",description: "one of walts magical tours",park_id: 1},
             {name: "Dumbo the flying elephant",description: "one of walts magical tours",park_id: 1},
-            {name: "Its a small world ",description: "one of walts magical tours",park_id: 1},
+            {name: "Its a small world ",description: "The greatest cruise to ever sail.",park_id: 1},
             {name: "Western river expedition",description: "one of walts magical tours",park_id: 1},
             {name: "Under the sea: journey of the little mermaid",description: "one of walts magical tours",park_id: 1},
             {name: "Buzz lightyears space ranger spin",description: "one of walts magical tours",park_id: 1},

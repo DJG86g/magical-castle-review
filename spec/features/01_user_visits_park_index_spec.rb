@@ -16,7 +16,7 @@ feature "visitor sees a list of parks" do
   scenario "clicks link and is taken to show page for given park" do
     epcot = Park.create(name: "Epcot",address: "200 Epcot Center Dr",city: "Orlando",state: "FL",zip: 32821 ,description: "A mixture of rides and world fare.")
     visit parks_path
-    
+
 
     click_link "Epcot"
 

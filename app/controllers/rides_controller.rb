@@ -14,8 +14,6 @@ class RidesController < ApplicationController
     @ride = Ride.new(ride_params)
     @ride.park = @park
 
-
-
     if @ride.save
       flash[:notice] = "Ride added successfully"
        redirect_to @park
@@ -32,7 +30,7 @@ class RidesController < ApplicationController
   private
 
   def ride_params
-    params.require(:ride).permit(:name, :description)
+    params.require(:ride).permit(:name, :description, :ride_photo)
 
   end
 end
