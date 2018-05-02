@@ -29,7 +29,6 @@ feature "visitors can add rides" do
     click_button "Add Ride"
     expect(page).to have_content "Name can't be blank"
     expect(page).to have_content "Description can't be blank"
-    save_and_open_page
   end
 
 
