@@ -10,9 +10,9 @@
       <p class="title-page-info"><%= @park.description %></p>
 
 
-<ul >
+<ul class="ride-tile-list">
   <% @rides.each do |ride| %>
-  <h3 class="park-tile"><%= link_to "#{ride.name}",park_ride_path(@park, ride)%></h3>
+  <li class="park-tile ride-tile"><%= link_to "#{ride.name}",park_ride_path(@park, ride)%></li>
   <% end %>
 </ul>
 
