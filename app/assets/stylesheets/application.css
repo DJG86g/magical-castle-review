@@ -61,18 +61,18 @@ body {
   text-shadow: none;
 }
 
-.park-tile__div {
+.park-tile-section {
   display: block;
   margin: auto;
   width: 100%;
 }
 
-.park-tile__ul {
+.park-tile-list {
   margin: auto;
   text-align: center;
 }
 
-.ride-tile__ul {
+.ride-tile-list {
   margin: auto;
   text-align: center;
   vertical-align: middle;
