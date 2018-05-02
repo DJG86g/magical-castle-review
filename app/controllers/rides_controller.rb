@@ -11,7 +11,6 @@ class RidesController < ApplicationController
 
   def create
     @park = Park.find(params[:park_id])
-    # binding.pry
     @ride = Ride.new(ride_params)
     @ride.park = @park
 

@@ -10,7 +10,6 @@ feature "visitor sees a ride" do
     visit park_ride_path(park, ride)
     expect(page).to have_content "Big thunder mountain"
     expect(page).to have_xpath("//img[contains(@src,landmap.jpg)]")
-    save_and_open_page
     expect(page).to have_link "Back to rides"
   end
 end
