@@ -17,16 +17,21 @@ feature "visitors can add rides" do
 
     fill_in 'Name', with: "Splash mountain"
     fill_in 'Description', with: "one of walts magic mountains"
-
+    attach_file "Ride photo", "#{Rails.root}/spec/support/images/photo.jpg"
     click_button "Add Ride"
   end
 
   scenario "visitor does not provide proper information for a ride" do
     park = Park.create(name: "Magic Kingdom",address: "1180 Seven Seas Dr",city: "Lake Buena Vista",state: "FL",zip: 32830 ,description: "The park is represented by Cinderella Castle, inspired by the fairy tale castle seen in the 1950 film.")
+
     visit new_park_ride_path(park)
 
     click_button "Add Ride"
     expect(page).to have_content "Name can't be blank"
     expect(page).to have_content "Description can't be blank"
   end
+
+
+
+
 end

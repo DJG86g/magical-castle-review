@@ -4,4 +4,5 @@ class Ride < ApplicationRecord
   belongs_to :park
   has_many :reviews
   has_many :users, through: :reviews
+  mount_uploader :ride_photo, RidePhotoUploader
 end
