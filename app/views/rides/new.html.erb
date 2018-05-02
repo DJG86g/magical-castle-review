@@ -1,3 +1,4 @@
+<% require 'carrierwave/orm/activerecord' %>
 <h1>New Ride Form</h1>
 
 <% if @ride.errors.any? %>
@@ -24,6 +25,11 @@
   <%= f.text_field :description %>
   </div>
 
+
+  <div class="field">
+    <%= f.label :ride_photo %><br>
+    <%= f.file_field :ride_photo %>
+  </div>
       <%= f.submit "Add Ride"%>
 
 <% end %>

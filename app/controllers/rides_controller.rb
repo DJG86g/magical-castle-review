@@ -11,10 +11,9 @@ class RidesController < ApplicationController
 
   def create
     @park = Park.find(params[:park_id])
+    # binding.pry
     @ride = Ride.new(ride_params)
     @ride.park = @park
-
-
 
     if @ride.save
       flash[:notice] = "Ride added successfully"
@@ -32,7 +31,7 @@ class RidesController < ApplicationController
   private
 
   def ride_params
-    params.require(:ride).permit(:name, :description)
+    params.require(:ride).permit(:name, :description, :ride_photo)
 
   end
 end
