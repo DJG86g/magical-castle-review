@@ -38,6 +38,7 @@ class RidesController < ApplicationController
 
   def ride_params
     params.require(:ride).permit(:name, :description, :ride_photo)
+  end 
 
   def authorize_user
     if !user_signed_in? || !current_user.superadmin_role
