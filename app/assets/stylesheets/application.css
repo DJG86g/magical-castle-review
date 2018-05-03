@@ -143,7 +143,7 @@ body {
   justify-content: center;
 }
 
-.review-tile-block {
+.review-tile-maker {
   display: block;
   border: 3px solid black;
   border-radius: 8px;
@@ -168,4 +168,14 @@ body {
 #review-tile__rating {
   font-size: 1rem;
   color: white
+}
+
+#review-title {
+  margin: auto;
+  text-align: center;
+}
+
+#ride-photo {
+  display: block;
+  text-align: center;
 }
