@@ -9,13 +9,15 @@
 //
 import React from 'react'
 import ReactDOM from 'react-dom'
-import RideShowContainer from '../containers/RideShowContainer'
+import App from '../containers/App'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <RideShowContainer />,
+    <App />,
     document.getElementById('app')
   );
 })
 
 console.log('React appears to be working, at least.')
+
+// // // //
