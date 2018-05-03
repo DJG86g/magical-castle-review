@@ -15,6 +15,8 @@
   <h3 class="park-tile"><%= link_to "#{ride.name}",park_ride_path(@park, ride)%></h3>
   <% end %>
 </ul>
+<%if user_signed_in? %>
+  <%= link_to 'Add a Ride', new_park_ride_path(@park) %>
+<%end%>
 
-<%= link_to 'Add a Ride', new_park_ride_path(@park) %>
 <%= link_to 'Back to main', parks_path(@park) %>

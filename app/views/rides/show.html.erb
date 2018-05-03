@@ -2,4 +2,7 @@
 
 <p class="title-page-info"><%= @ride.description %></p>
 <%= link_to 'Back to rides', park_path(@ride.park.id) %>
-<%= link_to 'Delete Ride', park_ride_path(@ride.park.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<%if current_user.try(:superadmin_role)%>
+  <%= link_to 'Delete Ride', park_ride_path(@ride.park.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+<%end%>

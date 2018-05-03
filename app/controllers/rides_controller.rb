@@ -1,7 +1,6 @@
 class RidesController < ApplicationController
   before_action :authorize_user, except: [:index, :new, :create, :show]
 
-
   def index
     @rides = Ride.all
   end
@@ -42,7 +41,7 @@ class RidesController < ApplicationController
   end
 
   def authorize_user
-    if !user_signed_in? || !current_user.superadmin_role?
+    if !user_signed_in? || !current_user.superadmin_role
       raise ActionController::RoutingError.new("You are not authorized to do that!")
     end
   end
