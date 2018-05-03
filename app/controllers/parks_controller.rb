@@ -1,4 +1,5 @@
 class ParksController <ApplicationController
+  before_action :authorize_user, except: [:index, :new, :create, :show]
 
   def index
     @parks = Park.all
@@ -28,6 +29,11 @@ class ParksController <ApplicationController
 
   def park_params
     params.require(:park).permit(:name, :address, :city, :state, :zip, :description)
+  end
 
+  def authorize_user
+    if !user_signed_in?
+      raise ActionController::RoutingError.new("You are not authorized to do that!")
+    end
   end
 end

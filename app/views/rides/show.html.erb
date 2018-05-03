@@ -1,6 +1,10 @@
 <h1 class="title-page-welcome"><%= @ride.name %></h1>
 
+<<<<<<< HEAD
 <h2><img id="ride-photo" src="<%= @ride.ride_photo.url %>" alt='ride photo'></h2>
+=======
+<h2><img src="<%= @ride.ride_photo.url %>" alt='ride photo'></h2>
+>>>>>>> master
 <p class="title-page-info"><%= @ride.description %></p>
 <!--
 <div class="review-tile-list">
@@ -18,3 +22,7 @@
 
 <%= link_to 'Add a Review', new_ride_review_path(@ride) %>
 <%= link_to 'Back to rides', park_path(@ride.park.id) %>
+
+<%if current_user.try(:superadmin_role)%>
+  <%= link_to 'Delete Ride', park_ride_path(@ride.park.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+<%end%>

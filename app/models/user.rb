@@ -12,4 +12,9 @@ class User < ApplicationRecord
   has_many :reviews
   has_many :rides, through: :reviews
   mount_uploader :profile_photo, ProfilePhotoUploader
+
+
+  def superadmin_role?
+    :user == "superadmin_role"
+  end
 end
