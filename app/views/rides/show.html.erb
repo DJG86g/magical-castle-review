@@ -2,8 +2,9 @@
 
 <h2><img src="<%= @ride.ride_photo.url %>" alt='ride photo'></h2>
 <p class="title-page-info"><%= @ride.description %></p>
-<%= link_to 'Back to rides', park_path(@ride.park.id) %>
+<p class="title-page-info"><%= "**description from wikipedia**" %></p>
+<h5 class="title-page-info"><%= link_to 'Back to rides', park_path(@ride.park.id) %></h5>
 
 <%if current_user.try(:superadmin_role)%>
-  <%= link_to 'Delete Ride', park_ride_path(@ride.park.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <h5 class="title-page-info"><%= link_to 'Delete Ride', park_ride_path(@ride.park.id), method: :delete, data: { confirm: 'Are you sure?' } %></h5>
 <%end%>
