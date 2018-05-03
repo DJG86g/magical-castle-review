@@ -34,11 +34,7 @@ describe('Review', () => {
   expect(wrapper.find('li')).toBePresent();
   expect(wrapper.find('li').text()).toEqual('Rating: 5');
   });
-//they can add a review (click button)
-  it('should invoke the onClick function from the props when clicked', () => {
-    wrapper.simulate('click');
-    expect(onclick).toHaveBeenCalled();
-  });
+//they can add a review (to be determined)
 
 });
 
