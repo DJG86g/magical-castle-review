@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 describe "#superadmin_role?" do
   it "is not an admin if the role is not superadmin_role" do
     user = User.create!(username: "Kpilk", first_name: "Karl", last_name: "Pilkington", email: "karl.pilkington@xfm.co.uk", date_of_birth: Date.new(9-23-1972), password: "password4", user_role: true, superadmin_role: false)

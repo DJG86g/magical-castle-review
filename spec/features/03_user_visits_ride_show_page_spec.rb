@@ -1,5 +1,4 @@
 require 'rails_helper'
-require 'pry'
 
 feature "visitor sees a ride" do
   scenario "sees a ride and link for new park" do
