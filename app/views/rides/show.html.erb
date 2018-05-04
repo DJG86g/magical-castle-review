@@ -18,3 +18,7 @@
 
 <%= link_to 'Add a Review', new_ride_review_path(@ride) %>
 <%= link_to 'Back to rides', park_path(@ride.park.id) %>
+
+<%if current_user.try(:superadmin_role)%>
+  <%= link_to 'Delete Ride', park_ride_path(@ride.park.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+<%end%>

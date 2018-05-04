@@ -9,27 +9,11 @@
 //
 import React from 'react'
 import ReactDOM from 'react-dom'
-import RideShowContainer from '../containers/RideShowContainer'
+import App from '../containers/App'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <RideShowContainer />,
+    <App />,
     document.getElementById('app')
   );
-})
-
-console.log('Hello World from Webpacker')
-
-import React from 'react'
-import ReactDOM from 'react-dom'
-
-document.addEventListener('DOMContentLoaded', () => {
-  let reactElement = document.getElementById('testing')
-
-  if (reactElement) {
-    ReactDOM.render(
-      <h1>Boo yaa</h1>,
-      reactElement
-    )
-  }
 })

@@ -4,15 +4,15 @@ import ReviewComponent from '../components/ReviewComponent'
 
 class RideShowContainer extends Component {
   constructor(props) {
-    debugger;
     super(props);
     this.state = {
-      reviews: []
+      reviews: [],
     }
   }
 
   componentDidMount() {
-    fetch('/api/v1/rides/${ride_id}/reviews.json')
+    const rideId = this.props.params.id;
+    fetch(`/api/v1/rides/${rideId}/reviews.json`)
     .then(response => {
       if (response.ok) {
         return response;
