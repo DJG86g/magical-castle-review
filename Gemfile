@@ -15,7 +15,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
-gem 'paperclip', '~> 6.0' 
+gem 'paperclip', '~> 6.0'
 #add gems to autheticate users
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.5'
 
 #pagination
 gem 'will_paginate', '~> 3.1.0'
+gem 'fog'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -43,7 +44,7 @@ gem 'mini_magick', '~> 4.3'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-
+gem "dotenv-rails"
 end
 
 group :test do

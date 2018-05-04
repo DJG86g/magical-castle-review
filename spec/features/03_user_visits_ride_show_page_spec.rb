@@ -1,5 +1,4 @@
 require 'rails_helper'
-require 'pry'
 
 feature "visitor sees a ride" do
   scenario "sees a ride and link for new park" do
@@ -8,7 +7,8 @@ feature "visitor sees a ride" do
     ride = Ride.create!(name: "Big thunder mountain",description: "one of walts magical tours", park: park)
 
     visit park_ride_path(park, ride)
-    expect(page).to have_content "Big thunder mountain"
+    expect(page).to have_content "Big thunder mountain"  
+    expect(page).to have_content "**description from wikipedia**"
     expect(page).to have_link "Back to rides"
   end
 end
