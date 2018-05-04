@@ -11,7 +11,9 @@ parks = Park.create!([
             {name: "Magic Kingdom",address: "1180 Seven Seas Dr",city: "Lake Buena Vista",state: "FL",zip: 32830 ,description: "The park is represented by Cinderella Castle, inspired by the fairy tale castle seen in the 1950 film."},
             {name: "Epcot",address: "200 Epcot Center Dr",city: "Orlando",state: "FL",zip: 32821 ,description: "A mixture of rides and world fare."},
             {name: "Hollywood Studios",address: "351 S Studio Dr",city: "Orlando",state: "FL",zip: 32830 ,description: "Hollywood Studios initially opened as both a theme park and an operating production studio"},
-            {name: "Animal Kingdom",address: "2901 Osceola Pkwy",city: "Orlando",state: "FL",zip: 32830 ,description: "Park is dedicated and themed entirely around the natural environment and animal conservation"}
+            {name: "Animal Kingdom",address: "2901 Osceola Pkwy",city: "Orlando",state: "FL",zip: 32830 ,description: "Park is dedicated and themed entirely around the natural environment and animal conservation"},
+            {name: "Disneyland",address: "1313 Disneyland Dr",city: "Anaheim",state: "CA",zip: 92802 ,description: "It is the only theme park designed and built under the direct supervision of Walt Disney"},
+            {name: "Disney California Adventure",address: "1313 Disneyland Dr",city: "Anaheim",state: "CA",zip: 92802 ,description: "In 2000 California Adventure opened up right across the way from Disneyland."}
           ])
 
 
@@ -50,7 +52,39 @@ rides = Ride.create!([
             {name: "Dinosaur",description: "one of walts magical tours",park_id: 4},
             {name: "Primeval",description: "one of walts magical tours",park_id: 4},
             {name: "Navi river journey",description: "one of walts magical tours",park_id: 4},
-            {name: "Triceratop spin",description: "one of walts magical tours",park_id: 4}
+            {name: "Triceratop spin",description: "one of walts magical tours",park_id: 4},
+            {name: "Matterhorn Bobsleds",description: "It is modelled after the Matterhorn, a mountain in the Alps on the border with Switzerland and Italy",park_id: 5},
+            {name: "Splash Mountain",description: "Splash Mountain is a log flume dark ride at Disneyland",park_id: 5},
+            {name: "The Haunted Mansion",description: "The Haunted Mansion is a dark ride attraction located at Disneyland Park",park_id: 5},
+            {name: "Pirates of the Caribbean",description: "Pirates in the 18th–19th century",park_id: 5},
+            {name: "It's a Small World",description: "It's a Small World is a water-based dark ride located in the Fantasyland area",park_id: 5},
+            {name: "Space Mountain",description: "the ride goes fairly quick in the dark",park_id: 5},
+            {name: "Indiana Jones Adventure",description: "The Indiana Jones Adventure is an enhanced motion vehicle dark ride attraction at Disneyland",park_id: 5},
+            {name: "Jungle Cruise",description: "The Jungle Cruise is an attraction located in Adventureland",park_id: 5},
+            {name: "Peter Pan's Flight",description: "Peter Pan's Flight is a suspended dark ride at the Magic Kingdom, Disneyland",park_id: 5},
+            {name: "Disneyland Railroad",description: "Disneyland Railroad, formerly known as the Santa Fe & Disneyland Railroad",park_id: 5},
+            {name: "Mr. Toad's Wild Ride",description: "Mr. Toad's Wild Ride is a dark ride at Disneyland Park",park_id: 5},
+            {name: "Finding Nemo Submarine Voyage",description: "Finding Nemo Submarine Voyage is an attraction located in Tomorrowland ",park_id: 5},
+            {name: "Mad Tea Party",description: "Mad Tea Party is a spinning tea cup ride at five of the six Disneyland-style theme parks around the world",park_id: 5},
+            {name: "Alice in Wonderland",description: "Based on the animated Disney adaptation of Alice In Wonderland",park_id: 5},
+            {name: "Snow White's Scary Adventures",description: "Snow White's Scary Adventures is a dark ride at the Disneyland",park_id: 5},
+            {name: "Dumbo the Flying Elephant",description: "Dumbo the Flying Elephant is an aerial carousel-style ride located in Fantasyland at six Disney parks around the world",park_id: 5},
+            {name: "Sailing Ship Columbia",description: "The Sailing Ship Columbia, located at the Disneyland park in Anaheim, California, is a full-scale replica of Columbia Rediviva, the first American ship to circumnavigate the globe",park_id: 5},
+            {name: "Gadget's Go Coaster",description: "Gadget's Go Coaster is a junior roller coaster at the Disneyland theme park in Anaheim",park_id: 5},
+            {name: "King Arthur Carrousel",description: "King Arthur Carrousel is a carousel attraction located in Fantasyland at Disneyland in Anaheim, California. The carousel was built in 1922 and operated at Sunnyside Beach Park in Toronto, Ontario, Canada, until the park closed.",park_id: 5},
+            {name: "Disneyland Monorail System",description: "The Disneyland Monorail System is an attraction and transportation system at the Disneyland Resort in Anaheim, California, United States. It was the first daily operating monorail in the Western Hemisphere, and the first in the United States.",park_id: 5},
+            {name: "Radiator Springs Racers",description: "Radiator Springs Racers is a simulated slot car type dark ride attraction in Cars Land at Disney California Adventure",park_id: 6},
+            {name: "Grizzly River Run",description: "Grizzly River Run is located at Disney California Adventure at the Disneyland Resort in Anaheim, California. It is similar to Kali River Rapids in Disney's Animal Kingdom but distinctive as the rafts are engineered to spin as they descend chutes",park_id: 6},
+            {name: "Mickey's Fun Wheel",description: "Mickey's Fun Wheel is a 160-foot tall eccentric wheel at Disney California Adventure, at the Disneyland Resort in Anaheim, California",park_id: 6},
+            {name: "Silly Symphony Swings",description: "Silly Symphony Swings is a wave swinger attraction in Paradise Pier at the Disneyland Resort in California. Themed to Disney's 1935 short film The Band Concert, Mickey Mouse conducts from high atop the attraction, synchronized with the music",park_id: 6},
+            {name: "Heimlich's Chew Chew Train",description: "A fun ride based on a the movie A Bug's Life",park_id: 6},
+            {name: "Monsters, Inc. Mike & Sulley to the Rescue!",description: "Monsters, Inc. Mike & Sulley to the Rescue! is a dark ride attraction at Disney California Adventure at the Disneyland Resort in Anaheim, California. It is based on the 2001 Disney·Pixar film Monsters, Inc.",park_id: 6},
+            {name: "Golden Zephyr",description: "Golden Zephyr is an attraction at Paradise Pier in Disney California Adventure Park built by D. H. Morgan Manufacturing. Themed to the Buck Rogers and Flash Gordon style rocket ships, it takes park guests on a relaxing trip",park_id: 6},
+            {name: "Red Car Trolley",description: "The Red Car Trolley is a 1,000 mm metre gauge tramway and transportation attraction at Disney California Adventure at the Disneyland Resort in Anaheim, California",park_id: 6},
+            {name: "The Bakery Tour",description: "The Boudin Bakery Tour, which opened with Disney California Adventure on February 8, 2001, is a tour that shows how sourdough bread is made, hosted by Boudin Bakery. In January 2015, the Boudin Bakery Tour was given an update.",park_id: 6},
+            {name: "Maliboomer",description: "The Maliboomer was an attraction at the Paradise Pier section of Disney California Adventure at the Disneyland Resort in Anaheim, California.",park_id: 6},
+            {name: "The Little Mermaid: Ariel's Undersea Adventure",description: "The Little Mermaid: Ariel's Undersea Adventure is a dark ride attraction based on the 1989 Disney animated film The Little Mermaid",park_id: 6},
+            {name: "Flik's Flyers",description: "a fun ride for the whole family",park_id: 6}
           ])
 
 reviews = Review.create!([
