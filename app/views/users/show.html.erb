@@ -1,0 +1,15 @@
+<h1 class="title-page-welcome"><%= @user.username %></h1>
+<h2><img src="<%= @user.profile_photo.url %>" alt='profile photo'></h2>
+
+<h4 class="title-page-info">
+    <%= @user.first_name %>
+    <%= @user.last_name %>
+</h4>
+
+<h4 class="title-page-info"><%= @user.email %></h4>
+
+<%= link_to 'Back to users', users_path(@users) %>
+
+<%if current_user.try(:superadmin_role)%>
+  <%= link_to 'Terminate User', user_path(@user.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+<%end%>
