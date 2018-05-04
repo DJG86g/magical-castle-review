@@ -1,4 +1,8 @@
 require 'carrierwave/orm/activerecord'
+
+
+#when adding aws DO NOT COMMIT THAT key
+#YOU SHOULD USE ENV TO OBSCURE IT
 CarrierWave.configure do |config|
   if !Rails.env.test?
     config.fog_credentials = {

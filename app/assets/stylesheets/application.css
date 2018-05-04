@@ -142,3 +142,40 @@ body {
   vertical-align: middle;
   justify-content: center;
 }
+
+.review-tile-maker {
+  display: block;
+  border: 3px solid black;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+  width: 75%;
+  margin: 8px auto;
+  text-decoration: none;
+  text-align: center;
+  background: #eab126;
+}
+
+#review-tile__title {
+  font-size: 1.3rem;
+  color: white
+}
+
+#review-tile__body {
+  font-size: .8rem;
+  color: white
+}
+
+#review-tile__rating {
+  font-size: 1rem;
+  color: white
+}
+
+#review-title {
+  margin: auto;
+  text-align: center;
+}
+
+#ride-photo {
+  display: block;
+  text-align: center;
+}

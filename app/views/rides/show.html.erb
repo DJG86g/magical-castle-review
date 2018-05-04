@@ -1,7 +1,12 @@
 <h1 class="title-page-welcome"><%= @ride.name %></h1>
 
-<h2><img src="<%= @ride.ride_photo.url %>" alt='ride photo'></h2>
+<h2><img id="ride-photo" src="<%= @ride.ride_photo.url %>" alt='ride photo'></h2>
 <p class="title-page-info"><%= @ride.description %></p>
+
+<div id="app"></div>
+
+
+<%= link_to 'Add a Review', new_ride_review_path(@ride) %>
 <p class="title-page-info"><%= "**description from wikipedia**" %></p>
 <h5 class="title-page-info"><%= link_to 'Back to rides', park_path(@ride.park.id) %></h5>
 
