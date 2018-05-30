@@ -17,13 +17,13 @@
  */
 
 body {
-  background: linear-gradient(#1b7b34, yellow);
+  background: linear-gradient(#0066CC, white);
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .top-bar {
-  background: #f24c4e;
+  background: skyblue;
   height: 2.8rem;
 }
 
@@ -36,21 +36,21 @@ body {
 }
 
 .title-page-welcome {
-  font-family: 'Gamja Flower', cursive;
+  font-family: 'WaltographRegular', cursive;
   text-align: center;
   color: white;
   text-shadow: 2px 2px #ccc;
   font-size: 2.6rem;
 }
 .title-page-info {
-  font-family: 'Gamja Flower', cursive;
+  font-family: 'WaltographRegular', cursive;
   text-align: center;
   color: white;
   font-size: 16px;
 }
 
 .name h1 a {
-  font-family: 'Gamja Flower', cursive;
+  font-family: 'WaltographRegular', cursive;
   font-size: 1.4rem;
   text-shadow: 2px 2px black;
 }
@@ -83,15 +83,15 @@ body {
   width: 75%;
   height: 5rem;
   text-decoration: none;
-  font-family: 'Gamja Flower', cursive;
+  font-family: 'WaltographRegular', cursive;
   font-size: 1.8rem;
-  border: 4px solid black;
+
   text-align: center;
   margin: 1rem;
   line-height: 1.2rem;
   align-items: center;
   box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
-  background: #eab126;
+  background: #0066CC;
   border-radius: 0.5rem;
   text-decoration: none;
   transition: 1.5s ease;
@@ -103,8 +103,8 @@ body {
 
 .park-tile:hover,
 .park-tile:active {
-  background: #f24c4e;
-  border: 4px solid #1fb58f;
+  background: blue;
+
   cursor: pointer;
   width: 85%;
 }
@@ -125,8 +125,8 @@ body {
   }
   .park-tile:hover,
   .park-tile:active {
-    background: #f24c4e;
-    border: 4px solid #1fb58f;
+    background: blue;
+
     cursor: pointer;
     width: 25%;
   }
@@ -152,7 +152,7 @@ body {
   margin: 8px auto;
   text-decoration: none;
   text-align: center;
-  background: #eab126;
+  background: #0066CC;
 }
 
 #review-tile__title {
@@ -178,4 +178,20 @@ body {
 #ride-photo {
   display: block;
   text-align: center;
+}
+
+.field{
+  font-family: 'WaltographRegular', cursive;
+  color: white;
+  font-size: 26px;
+  width: 450px;
+  height: 80px;
+}
+.form{
+  background-color: #0066CC;
+  border-style: solid;
+  border-color: blue;
+  border-width: 2px;
+  border-radius: 10px;
+  margin-right: 800px;
 }
